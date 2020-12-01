@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --green: #87BBA2;
+  --grey: #30343F;
+  --teal: #55828B;
+}
+
+body {
+  background-color: var(--grey);
+  text-align: center;
+}
+
+main {
+  background-color: white;
+  font-family: poppins;
+  margin: 2rem auto;
+  opacity: 75%;
+  padding: 2rem;
+  width: 800px;
+}
+
+h1, h2, h3, h4, .player-score-total, .computer-score-total {
+  font-weight: bold;
+}
+
+h3, h4, p, .round-result {
+  color: var(--grey);
+}
+
+h1 {
+  color: var(--green);
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+.instructions {
+  padding-bottom: 1rem;
+}
+
+h2 {
+  color: var(--teal);
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+.player-choices {
+  background-color: var(--green);
+  margin: auto;
+  padding: 1rem;
+  width: 500px;
+}
+
+button {
+  background-color: var(--teal);
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: poppins;
+  font-size: 1rem;
+  margin-top: 10px;
+  padding: 0.5rem;
+  width: 120px;
+}
+
+button:hover {
+  background-color: var(--grey);
+  color: white;
+}
+
+.scores-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto;
+  width: 500px;
+}
+
+#player-score-container, #computer-score-container {
+  background-color: var(--green);
+  padding: 1rem;
+  width: 240px;
+}
+
+.player-score-total, .computer-score-total {
+  color: white;
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+.game-result {
+  color: var(--green);
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+@media (max-width: 800px) {
+  main {
+    min-width: 300px;
+    width: 75%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  button {
+    font-size: 0.8rem;
+  }
+  .scores-container, .player-choices {
+    width: 250px;
+  }
+  #player-score-container, #computer-score-container {
+    padding: 1rem;
+    width: 48%;
+  }
+  .player-score-total, .computer-score-total {
+    font-size: 2rem;
+  }
+  .round-result {
+    font-size: 0.8rem;
+  }
+  .game-result {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  main {
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+}
